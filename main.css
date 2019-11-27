@@ -1,0 +1,44 @@
+
+.navigation {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    font-family: 'Squada One', cursive;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: rgba(217, 215, 221, 0.9);
+    position: fixed;
+}
+
+.navigation ul {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+  }
+
+.navigation ul li {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+
+.navigation ul li:hover {
+   background-color: rgba(189, 187, 192, 0.438);
+ }
+ 
+
+.navigation ul li a {
+   color: #111 ;
+   text-decoration: none;
+ }
+
+
+.navigation a:hover {
+   color: white;
+}
+
+.navigation a:active {
+   border-bottom: 4px solid black;
+}
