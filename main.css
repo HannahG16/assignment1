@@ -160,7 +160,7 @@
     grid-template-columns: 100px 100px 100px;
     grid-gap: 50px;
     grid-auto-rows: minmax(100px, auto);
-    padding-left: 500px;
+    padding-left: 20%;
     padding-right: 20%;
     text-align: center;
 
@@ -169,24 +169,26 @@
 .github {
     font-family: 'Oswald', cursive;
     font-size: 12px;
-    background-color: rgba(247, 8, 175, 0.849);
+    background-color: rgba(189, 187, 192, 0.438);
 }
 
 .cv {
     font-family: 'Oswald', cursive;
     font-size: 12px;
-    background-color: rgba(247, 8, 175, 0.849);
+    background-color: rgba(189, 187, 192, 0.438);
 }
 
 .portfolio {
     font-family: 'Oswald', cursive;
     font-size: 12px;
-    background-color: rgba(247, 8, 175, 0.849);
+    background-color: rgba(189, 187, 192, 0.438);
 }
 
 .github:hover {
     border-radius: 50%;
     transition: 0.3s;
+    background-color: white;
+    color: rgba(247, 8, 175, 0.849);
 }
 
 
