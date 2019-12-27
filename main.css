@@ -303,10 +303,18 @@ body {
 /* contact form */
 
 .contactContainer {
-    font-family: 'Squada one', cursive;
-    font-size: 30px;
-    font-weight: normal;
+    padding-left: 300px;
+    padding-right: 300px;
+}
 
-    padding-left: 200px;
-    padding-right: 200px;
+.contactContainer form h3 {
+    font-family: 'Squada one', cursive;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+.contactContainer form h4 {
+    font-family: 'Squada one', cursive;
+    font-size: 18px;
+    font-weight: normal;
 }
