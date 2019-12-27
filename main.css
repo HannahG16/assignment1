@@ -7,7 +7,7 @@
     font-size: 20px;
     padding-top: 20px;
     padding-bottom: 10px;
-    background-color: rgba(194, 191, 194, 0.9);
+    background-color: rgba(233, 217, 228, 0.849);
 }
 
 .navigation ul {
@@ -54,7 +54,7 @@ footer {
     font-size: 20px;
     padding-top: 20px;
     padding-bottom: 10px;
-    background-color: rgba(194, 191, 194, 0.9);
+    background-color: rgba(233, 217, 228, 0.849);
 }
 
 
@@ -190,13 +190,13 @@ body {
     padding-right: 20%;
     padding-top: 20px;
     text-align: center;
-
 }
 
 .github {
     font-family: 'Oswald', cursive;
     font-size: 12px;
     background-color: rgba(189, 187, 192, 0.438);
+    text-decoration: none;
 }
 
 .cv {
@@ -245,6 +245,7 @@ body {
     text-align: center;
 }
 
+
 .text {
     font-family: "Squada One";
     font-size: 20px;
@@ -286,8 +287,26 @@ body {
 
 .colourBackground {
     background-color: rgba(233, 217, 228, 0.849);
-    padding-top: 80px;
+    padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
     background-size: 50%;
+    
+}
+
+.heading h1 {
+    font-family: 'Squada one', cursive;
+    font-weight: normal;
+    font-size: 40px;
+}
+
+/* contact form */
+
+.contactContainer {
+    font-family: 'Squada one', cursive;
+    font-size: 30px;
+    font-weight: normal;
+
+    padding-left: 200px;
+    padding-right: 200px;
 }
