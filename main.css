@@ -192,40 +192,14 @@ body {
     text-align: center;
 }
 
-.github {
+.link {
     font-family: 'Oswald', cursive;
-    font-size: 12px;
-    background-color: rgba(189, 187, 192, 0.438);
-    text-decoration: none;
-}
-
-.cv {
-    font-family: 'Oswald', cursive;
-    font-size: 12px;
+    font-size: 11px;
     background-color: rgba(189, 187, 192, 0.438);
 }
 
-.portfolio {
-    font-family: 'Oswald', cursive;
-    font-size: 12px;
-    background-color: rgba(189, 187, 192, 0.438);
-}
 
-.github:hover {
-    border-radius: 50%;
-    transition: 0.3s;
-    background-color: white;
-    color: rgba(247, 8, 175, 0.849);
-}
-
-.cv:hover {
-    border-radius: 50%;
-    transition: 0.3s;
-    background-color: white;
-    color: rgba(247, 8, 175, 0.849);
-}
-
-.portfolio:hover {
+.link:hover {
     border-radius: 50%;
     transition: 0.3s;
     background-color: white;
@@ -305,16 +279,24 @@ body {
 .contactContainer {
     padding-left: 300px;
     padding-right: 300px;
+    padding-bottom: 3rem;
 }
 
 .contactContainer form h3 {
     font-family: 'Squada one', cursive;
     font-size: 40px;
     font-weight: normal;
+    padding-top: 1rem;
+}
+
+.contactContainer form h3:hover {
+    color: rgba(247, 8, 175, 0.849);
+    box-shadow: 5px 5px;
+    transition: 0.5s;
 }
 
 .contactContainer form h4 {
-    font-family: 'Squada one', cursive;
-    font-size: 18px;
+    font-family: 'Oswald', cursive;
     font-weight: normal;
 }
+
