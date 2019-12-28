@@ -315,5 +315,6 @@ body {
 	width:70%;
 	border:1px solid #CCC;
 	background:rgb(243, 243, 235);
-	margin:0 0 5px;
+    margin:0 0 5px;
+    display: inline-block;
 }
