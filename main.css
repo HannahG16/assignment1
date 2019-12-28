@@ -276,23 +276,26 @@ body {
 
 /* contact form */
 
+.wrapper {
+    text-align: center;
+}
+
 .contactContainer {
-    padding-left: 300px;
-    padding-right: 300px;
     padding-bottom: 3rem;
+    max-width: 400px;
+    display: inline-block;
+    margin: 50px 0;
+    background-color: rgba(233, 217, 228, 0.849);
 }
 
 .contactContainer form h3 {
     font-family: 'Squada one', cursive;
     font-size: 40px;
     font-weight: normal;
-    padding-top: 1rem;
 }
 
 .contactContainer form h3:hover {
     color: rgba(247, 8, 175, 0.849);
-    box-shadow: 5px 5px;
-    transition: 0.5s;
 }
 
 .contactContainer form h4 {
@@ -300,3 +303,17 @@ body {
     font-weight: normal;
 }
 
+ fieldset {
+	border: medium none;
+	margin: 0 0 10px;
+	min-width: 70%;
+	padding-left: 10px;
+	width: 70%;
+} 
+
+.input{
+	width:70%;
+	border:1px solid #CCC;
+	background:rgb(243, 243, 235);
+	margin:0 0 5px;
+}
