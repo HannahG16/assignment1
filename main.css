@@ -51,14 +51,20 @@ footer {
     height: 30px;
     text-align: center;
     font-family: 'Squada One', cursive;
-    font-size: 20px;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    font-size: 40px;
+    padding-top: 10px;
+    padding-bottom: 20px;
     background-color: rgba(233, 217, 228, 0.849);
 }
 
+footer a {
+    text-decoration: none;
+    color: black;
+}
 
-
+footer a:hover {
+    color: rgba(247, 8, 175, 0.849);
+}
 
 
 
