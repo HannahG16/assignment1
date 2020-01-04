@@ -8,6 +8,8 @@
     padding-top: 20px;
     padding-bottom: 10px;
     background-color: rgba(233, 217, 228, 0.849);
+    position: sticky;
+    top: 0;
 }
 
 .navigation ul {
@@ -42,9 +44,11 @@
    transition: 0.3s;
 }
 
-.navigation a:active {
-   border-bottom: 4px solid black;
+.navigation li.active {
+   /* border-bottom: 2px solid black; */
+   background-color: rgba(247, 8, 175, 0.1);
 }
+
 
 footer {
     width: 100%;
@@ -72,6 +76,9 @@ footer a:hover {
 
 body {
     background-color: rgb(243, 243, 235);
+    overflow-x: hidden;
+    margin: 0;
+    position: relative;
 }
 
 .container {
@@ -79,18 +86,29 @@ body {
     padding-top: 20px;
     width: 100%;
     height: auto;
-    padding-bottom: 40px;
+    overflow-x: hidden;
+    /* padding-bottom: 40px; */
 }
 
 .backgroundImage {
     position: absolute;
     z-index: -1;
-    top: 50%;
+    opacity: 40%;
+    /* top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%; 
-    opacity: 40%;
+    width: 100vw;
+    height: 100%;  */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('/images/laptop.jpg');
+    width: 100vw;
+    height: 100%;
+    top: 0;
+}
+.backgroundImage img {
+    width: 100vw;
 }
 
 
@@ -194,8 +212,10 @@ body {
     grid-auto-rows: minmax(100px, auto);
     padding-left: 35%;
     padding-right: 20%;
-    padding-top: 20px;
+    padding-top: 50px;
+    padding-bottom: 40px;
     text-align: center;
+    background-color: rgb(243, 243, 235);
 }
 
 .link {
@@ -207,6 +227,10 @@ body {
 .link a {
     text-decoration: none;
     color: black;
+}
+
+.link a h1 {
+    font-weight: normal;
 }
 
 .link:hover {
@@ -253,6 +277,10 @@ body {
     transition: .5s ease;
     backface-visibility: hidden;
     object-fit: cover;
+}
+
+.portfolio-item img:hover {
+    filter: grayscale(0.8);
 }
 
 .middle {
@@ -324,15 +352,32 @@ body {
 	margin: 0 0 10px;
 	min-width: 70%;
 	padding-left: 10px;
-	width: 70%;
-} 
+    width: 70%;
+    margin: auto;
+}
 
-.input{
-	width:70%;
+.input input[type='text'], .input input[type='email'], .input input[type='tel'], .input textarea{
+	width: inherit;
 	border:1px solid #CCC;
 	background:rgb(243, 243, 235);
-    margin:0 0 5px;
+    padding: 10px 20px;
     display: inline-block;
+    font-family: 'Oswald', cursive;
+}
+
+button {
+    background-color: rgba(233, 217, 228, 0.849);
+    border: none;
+    text-align: center;
+    font-family: 'Squada One', cursive;
+    font-size: 21px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(189, 187, 192, 0.438);
+    color: white;
+    transition: 0.3s;
 }
 
 /* cv page  */
@@ -342,10 +387,12 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 0px;
     grid-auto-rows: minmax(100px, auto);
-    padding-left: 30%;
-    padding-right: 30%;
+    /* padding-left: 30%;
+    padding-right: 30%; */
     padding-bottom: 2rem;
     padding-top: 2rem;
+    max-width: 40%;
+    margin: auto;
 }
 
 .section1 {
@@ -364,4 +411,98 @@ body {
     grid-column: 1 / 3 ;
     grid-row: 5 / 6 ;
     background-color: brown;
+}
+
+.sectionRow {
+    display: block;
+    width: 100%;
+}
+
+.sectionColumn1{
+    display: inline-block;
+    width: 50%;
+}
+
+.sectionColumn2{
+    display: inline-block;
+    width: 50%;
+}
+
+@media only screen and (min-height: 1188px) {
+    .container {
+        height: 87vh;
+    }
+}
+
+/* TABLET */
+@media only screen and (max-width: 1023px) {
+    .display {
+        max-width: 70%;
+        margin: auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .mainTextP img {
+        width: 100%;
+    }
+
+    .links {
+        padding-left: 25%
+    }
+
+    .containerGrid {
+        max-width: 70%;
+    }
+}
+
+/* MOBILE */
+@media only screen and (max-width: 639px) {
+    .display {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .profilePicture {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    .mainText2 {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    
+    .mainTextP {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    .mainText3 {
+        grid-column: 1;
+        grid-row: 5;
+    }
+
+    .links{
+        padding-left: 0;
+        padding-right: 0;
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+
+    .link {
+        grid-column: 1;
+        width: 100px;
+        height: 100px;
+        margin: auto;
+    }
+
+    .display2 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+    }
+
+    .portfolio-item {
+        grid-column: 1;
+    }
 }
