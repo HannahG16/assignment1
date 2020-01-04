@@ -1,4 +1,8 @@
-
+/* styles the navigation class by setting the width to be 100% so its responsive, the height to 30px to allow for 
+spacing between the elements, centers the text to the middle, sets the font to the google api font squada one, sets 
+the font size and adds padding to the top and bottom of the navigation. The background colour is set along with a slightly 
+opace display which allows the user to see the information behind it. The position is set to sticky which makes it stick 
+to the top of the screen through the top 0 */
 .navigation {
     width: 100%;
     height: 30px;
@@ -12,44 +16,49 @@
     top: 0;
 }
 
+/* styles the unordered list as a whole by removing the margin on both sides as well as the padding, the list style is set to
+none to remove the bullet points which are automatically styled */
 .navigation ul {
     margin: 0 auto;
     padding: 0;
     list-style: none;
   }
 
+/* styles the navigation list element by centering them using inline block display and adding padding of 10px
+each side of the element to create spacing */
 .navigation ul li {
     display: inline-block;
     padding-left: 10px;
     padding-right: 10px;
   }
 
-
+/* when the navigation list item is hovered over the background colour will change to the below rgba */
 .navigation ul li:hover {
    background-color: rgba(189, 187, 192, 0.438);
  }
  
-
+/* sets the navigations link elements within the list element to the colour black and sets the text decoration to none
+which removes the automatic hyperlink deisgn put onto links */
 .navigation ul li a {
    color: #111 ;
    text-decoration: none;
  }
 
-.navigation :hover .logo{
-    opacity: 1;
-}
-
+/* when the navigation a links are hovered over the text colour will turn white at a transition speed of 0.3 seconds */
 .navigation a:hover {
    color: white;
    transition: 0.3s;
 }
 
+/* when the navigation li class is active a background colour of pink with a low opacity will show so the user
+knows what page they are currently on*/
 .navigation li.active {
-   /* border-bottom: 2px solid black; */
    background-color: rgba(247, 8, 175, 0.1);
 }
 
-
+/* styles the footer by setting the width to be 100% and the height 30px similar to the navigation bar, the text is alligned
+and the font family set to squada one from the google fonts api, the font size is set and padding put on the top and bottom. 
+The background colour is set to the same as the navigations bars */
 footer {
     width: 100%;
     height: 30px;
@@ -61,15 +70,17 @@ footer {
     background-color: rgba(233, 217, 228, 0.849);
 }
 
+/* removes the text decoration on the icons because they are links they are automatically underlined and 
+coloured blue so the colour is set to black */
 footer a {
     text-decoration: none;
     color: black;
 }
 
+/* when the footer links are hovered over the colour will change to pink */
 footer a:hover {
     color: rgba(247, 8, 175, 0.849);
 }
-
 
 
 /* index.html - about page */
