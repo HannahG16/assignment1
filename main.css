@@ -114,7 +114,7 @@ over and over again, by setting this to no-repeat it wont do this. the url is th
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url('/images/laptop.jpg');
+    background-image: url('images/laptop.jpg');
     width: 100vw;
     height: 100%;
     top: 0;
