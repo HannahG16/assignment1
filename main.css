@@ -434,6 +434,7 @@ button:hover {
 
 /* cv page  */
 
+/*  */
 .title h1 {
     font-family: 'Squada One', cursive;
     font-weight: normal;
@@ -442,10 +443,12 @@ button:hover {
     margin-bottom: 1rem;
 }
 
+/* when the h1 in the title class is hovered over the colour changes to pink with an alpha value */
 .title h1:hover {
     color: rgba(247, 8, 175, 0.849);
 }
 
+/*  */
 .containerGrid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -457,16 +460,20 @@ button:hover {
     margin: auto;
 }
 
+/* styles the h3 tag inside the class by setting the margin start to 2px and margin end aswell*/
 .containerGrid h3 {
     margin-block-start: 2px;
     margin-block-end: 2px;
 }
 
+/* styles the paragraph tag inside the class by setting the margin start to 2px and margin end 15px */
 .containerGrid p {
     margin-block-start: 2px;
     margin-block-end: 15px;
 }
 
+/* styles the section1 class by setting the position within the grid to column 1 and row 1 to 5, the background
+colour to rgba below and adding padding to the right, left and bottom to create appropriate spacing */
 .section1 {
     grid-column: 1 ;
     grid-row: 1/5;
@@ -476,6 +483,8 @@ button:hover {
     padding-bottom: 20px;
 }
 
+/* styles the h3 tag inside the class by setting the font family to squada one, the paragraph font, the font weight to normal
+the font size to 30px and aligning the text to the center. Padding is also added to the bottom of 10px */
 .section1 h3 {
     font-family: 'Squada One',cursive;
     font-weight: normal;
@@ -484,6 +493,8 @@ button:hover {
     padding-bottom: 10px;
 }
 
+/* styles the class image cv by aligning the text in the center, adding padding to the bottom and top of 1 rem to
+add appropriate spacing, the width is set to 100% of the page */
 .imageCV {
     text-align: center;
     padding-top: 1rem;
@@ -491,7 +502,7 @@ button:hover {
     width: 100%;
 }
 
-/*  */
+/* styles the paragraph text in class by setting the font family to oswald and setting the font size to 14px */
 .contactDetails p {
     font-family: 'Oswald',cursive;
     font-size: 14px;
