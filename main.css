@@ -291,9 +291,11 @@ this will be done at a transition speed of 0.3 seconds */
     color: rgba(247, 8, 175, 0.849);
 }
 
-
 /* portfolio */
 
+/* the display2 class sets the grid up by setting the display to grid, the columns to 3 and the grid gap to 0px,
+the row is then set to the minmax value of 300px and the text is aligned into the center. Padding is added to the left 
+and right of 20% */
 .display2 {
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -304,12 +306,14 @@ this will be done at a transition speed of 0.3 seconds */
     text-align: center;
 }
 
-
+/* styles the text class to set the font to squada one, the paragraph text and the font size to 
+20px */
 .text {
     font-family: "Squada One";
     font-size: 20px;
 }
 
+/*  */
 .portfolio-item {
     max-width: 100%;
     max-height: 200px;
@@ -317,6 +321,7 @@ this will be done at a transition speed of 0.3 seconds */
     position: relative;
 }
 
+/*  */
 .portfolio-item img {
     opacity: 1;
     display: block;
@@ -327,10 +332,14 @@ this will be done at a transition speed of 0.3 seconds */
     object-fit: cover;
 }
 
+/* when the portfolio image is hovered over the image gets grayscaled */
 .portfolio-item img:hover {
     filter: grayscale(0.8);
 }
 
+/* styles the middle class by setting a transition speed of 0.5s, the opacity is set to 0 making it disappear out 
+of view, the position is set to absolute to keep it at the exact position, the position is set to 10% at the top
+and left 20%. the background colour is set and the width is set to 100px, and the height 20px */
 .middle {
     transition: .5s ease;
     opacity: 0;
@@ -342,12 +351,17 @@ this will be done at a transition speed of 0.3 seconds */
     height: 20px;
 }
 
+/* when the portfolio item middle text is hovered over the opacity will be set to 1, the colour set to pink and 
+the transition speed is 0.5s  */
 .portfolio-item:hover .middle {
     opacity: 1;
     color: rgba(247, 8, 175, 0.849);
     transition: 0.5s;
 }
 
+/* styles the class by setting the background colour, adding padding to the top and bottom of 20px, aligning the 
+text in the center and adding margins around the right left and bottom to create correct spacing. The background 
+size is set to 50% of the class */
 .colourBackground {
     background-color: rgba(233, 217, 228, 0.849);
     padding-top: 20px;
@@ -357,7 +371,6 @@ this will be done at a transition speed of 0.3 seconds */
     margin-bottom: 40px;
     margin-left: 3rem;
     margin-right: 3rem;
-    
 }
 
 /* styles the h1 inside the heading class by setting the font family to squada one, setting the font weight to normal
@@ -434,7 +447,8 @@ button:hover {
 
 /* cv page  */
 
-/*  */
+/* styles the h1 tag inside the title class by setting the font family to squada one, the font weigth to normal
+and the font size to 40px. The text is aligned in the center and a margin of 1rem is added to the bottom */
 .title h1 {
     font-family: 'Squada One', cursive;
     font-weight: normal;
@@ -448,7 +462,9 @@ button:hover {
     color: rgba(247, 8, 175, 0.849);
 }
 
-/*  */
+/* the class holds the grid display and sets the column to repeat 2 with 1fr, the grid gap is 0 to keep the
+contents next to each other, the grid rows are 100px minmax and are automatically implimented. Padding is added 
+on the top and bottom. The max width is set to 40% and the margin is set to auto  */
 .containerGrid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
